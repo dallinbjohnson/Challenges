@@ -102,6 +102,6 @@ def play_again
 end
 
 puts "There is a village with 10 people. Every night one random person gets turned into a random animal and rampages through the village then turns back the next morning. See who and how long the villagers will survive!"
-puts ""
+puts "\n"
 
 game
