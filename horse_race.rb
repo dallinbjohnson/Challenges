@@ -1,6 +1,6 @@
 # You guys now take bets for a horse race.  Take bids from people and then give the pay out to the winner.
 # Create four horses.  Accept bets to which will win.  randomly choose a horse to win and pay out to the winner.
-@horses = ["Seabiscet", "Secretariat", "Man of War", "Big Brown", "Zeus", "Poseidon"]
+@horses = ["seabiscet", "secretariat", "man of war", "big brown", "zeus", "poseidon"]
 @horse_bets = {}
 @horse_person = {}
 
@@ -28,11 +28,7 @@ def horse
 	puts @horses
 
 	print "What horse would you like to bet on? "
-	@horse_name = gets.chomp.strip
-
-	if !@horses.include?(@horse_name)
-		horse()
-	end
+	@horse_name = gets.chomp.strip.downcase
 
 	@horses.delete(@horse_name)
 
@@ -44,8 +40,9 @@ end
 def customers
 	@people = []
 	
-	print "How many people will be taking bets? "
+	print "How many people will be taking bets up to #{@horses.length}? "
 	@person = gets.chomp.strip.to_i
+
 
 	until @person == @people.length
 		print "What is your name? "
@@ -60,7 +57,7 @@ def customers
 end
 
 def won
-	@horses = ["Seabiscet", "Secretariat", "Man of War", "Big Brown", "Zeus", "Poseidon"]
+	@horses = ["seabiscet", "secretariat", "man of war", "big brown", "zeus", "poseidon"]
 
 	win = @horses.sample
 	prize = @horse_bets.values.inject { |a, b| a + b }

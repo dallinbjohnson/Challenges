@@ -86,7 +86,7 @@ def game
 end
 
 def play_again
-	puts "Would you like to play again?"
+	puts "Would you like to play again (yes or no)?"
 	input = gets.chomp.downcase.strip
 	if input == "yes"
 		@villagers = ["Ian", "Braden", "Dallin", "Gordon", "Jared", "Dipesh", "Dave", "Tyson", "Ben", "Dan"]
