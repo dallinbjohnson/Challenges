@@ -45,7 +45,9 @@ describe 'digits and powers' do
   end
 end
 
+#
 # Other options
+#
 
 def dig_pow1(n, p)
     total = n.to_s.split('').map.with_index{|d, i| d.to_i ** (p+i)}.reduce(:+)

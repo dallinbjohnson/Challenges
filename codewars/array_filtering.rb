@@ -29,7 +29,9 @@ describe 'filter array' do
   end
 end
 
+#
 # Other options
+#
 
 def filter_list1(l)
 l.select{|i| i.is_a?(Integer)}

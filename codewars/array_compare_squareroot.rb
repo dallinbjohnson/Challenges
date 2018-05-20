@@ -57,7 +57,9 @@ describe 'compare array' do
   end
 end
 
+#
 # Other options
+#
 
 def comp1(array1, array2)
   return false if array1.nil? || array2.nil?

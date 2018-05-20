@@ -5,7 +5,6 @@
 # Add a feature to your program that will check out a person from your list. Store their data in a separate list that stores their info and starts a timer for 1 week.
 
 # Turn them into dragons.
-
 require 'terminal-table'
 require 'date'
 require 'csv'
